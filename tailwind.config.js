@@ -30,6 +30,12 @@ module.exports = {
       screens: {
         xs: '460px',
       },
+
+      backgroundImage: {
+        mobileFooter: "url('./assets/mobile/image-footer.jpg')",
+        tabletFooter: "url('./assets/tablet/image-footer.jpg')",
+        desktopFooter: "url('./assets/desktop/image-footer.jpg')",
+      },
     },
   },
   plugins: [],

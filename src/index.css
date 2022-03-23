@@ -23,24 +23,28 @@
 @layer components {
   /* Block Component */
   .block {
-    @apply text-center my-10 mx-auto px-8 xs:max-w-[460px] xs:px-0 md:my-16;
+    @apply text-center my-10 mx-auto px-8 max-w-[460px] xs:px-0 md:my-16 xl:mx-auto xl:max-w-[540px] xl:my-5;
   }
 
   .block__heading {
-    @apply font-redBlack text-dark-gray text-l md:text-xl px-4 md:px-14;
+    @apply font-redBlack text-dark-gray;
   }
 
   .block__description {
-    @apply text-gray my-6 md:text-s;
+    @apply my-6 font-redMedium text-gray md:text-s xl:my-8;
+  }
+
+  .block__tagline {
+    @apply font-redBlack mt-16 mb-4 text-xs uppercase font-bold text-blue tracking-[3px];
   }
 
   /* Button Component */
   .btn {
-    @apply font-redBlack m-2 py-4 px-9 border-none rounded-full whitespace-nowrap cursor-pointer;
+    @apply py-4 m-2 border-none rounded-full cursor-pointer font-redBlack px-9 whitespace-nowrap;
   }
 
   .btn--primary {
-    @apply bg-blue text-white;
+    @apply text-white bg-blue;
   }
 
   .btn--primary:hover {
@@ -52,14 +56,21 @@
   }
 
   .btn--secondary {
-    @apply bg-purple text-white;
+    @apply text-white bg-purple;
   }
 
   .btn--secondary:hover {
     @apply bg-hover-purple;
   }
 
-  .btn_s-version {
+  .btn__s-version {
     @apply text-light-purple;
+  }
+}
+
+@layer utilities {
+  .pageBottom {
+    margin-top: 10rem;
+    margin-bottom: -1.8rem !important;
   }
 }
